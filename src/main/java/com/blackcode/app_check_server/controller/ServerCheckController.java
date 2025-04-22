@@ -28,9 +28,9 @@ public class ServerCheckController {
     private final AsyncServerCheckService2 serverCheckService2;
 
     @GetMapping(value = "/status")
-    public ResponseEntity<Map<String, Object>> checkServerStatus(@RequestParam String url) {
-        Map<String, Object> result =  serverCheckService.checkServerStatus(url, 3);
-        return ResponseEntity.status((int) result.get("status")).body(result);
+    public ResponseEntity<String> checkServerStatus(@RequestParam String url) {
+        serverCheckService.checkServerStatusAsync(url, 3);
+        return ResponseEntity.ok("Pengecekan server sedang berjalan secara async di background.");
     }
 
     @GetMapping(value = "/status1")
