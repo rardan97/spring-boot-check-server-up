@@ -1,4 +1,4 @@
-package com.blackcode.app_check_server;
+package com.blackcode.app_check_server.dto;
 
 import java.time.LocalDateTime;
 import lombok.Builder;

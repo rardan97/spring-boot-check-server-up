@@ -1,4 +1,4 @@
-package com.blackcode.app_check_server;
+package com.blackcode.app_check_server.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

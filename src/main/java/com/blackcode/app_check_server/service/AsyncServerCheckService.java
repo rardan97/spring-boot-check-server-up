@@ -1,4 +1,4 @@
-package com.blackcode.app_check_server;
+package com.blackcode.app_check_server.service;
 
 
 import org.springframework.stereotype.Service;

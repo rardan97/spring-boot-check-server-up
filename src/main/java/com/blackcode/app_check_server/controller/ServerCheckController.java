@@ -1,6 +1,10 @@
-package com.blackcode.app_check_server;
+package com.blackcode.app_check_server.controller;
 
 
+
+import com.blackcode.app_check_server.service.AsyncServerCheckService;
+import com.blackcode.app_check_server.service.AsyncServerCheckService1;
+import com.blackcode.app_check_server.service.AsyncServerCheckService2;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
