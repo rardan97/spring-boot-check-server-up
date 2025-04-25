@@ -1,10 +1,8 @@
-package com.blackcode.app_check_server.service;
+package com.blackcode.app_check_server.utils;
 
 
-import org.springframework.boot.info.ProcessInfo;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;

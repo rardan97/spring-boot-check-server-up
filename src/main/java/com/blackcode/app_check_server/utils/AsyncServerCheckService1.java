@@ -1,4 +1,4 @@
-package com.blackcode.app_check_server.service;
+package com.blackcode.app_check_server.utils;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

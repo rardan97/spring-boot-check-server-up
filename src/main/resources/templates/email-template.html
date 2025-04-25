@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>National Revenue Payment</title>
+    <style>
+        body, table, td, a {
+            font-family: Arial, sans-serif;
+        }
+        .email-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .email-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .email-body {
+            background: #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .success-icon {
+            width: 60px;
+            height: 60px;
+        }
+        .payment-details {
+            text-align: left;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 8px;
+        }
+        .title-comp {
+            margin-top: 20px;
+            padding-top: 14px;
+            border-top: 1px solid #ffffff;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .table-info {
+            width: 100%;
+            border-collapse: collapse;
+            /* margin-top: 10px; */
+        }
+        .table-info td {
+            padding: 8px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        .line-value {
+            text-align: left;
+            font-size: 16px;
+        }
+        .text-title {
+            font-size: 16px;
+            width: 250px;
+        }
+        .logo-desktop {
+            display: block;
+            margin-left: 3px;
+        }
+        .logo-wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .logo-mobile {
+            display: none;
+        }
+        .col-start {
+            width: 400px ;
+        }
+
+        /* Responsiveness */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100%;
+                padding: 10px;
+            }
+            .email-body {
+                padding: 10px;
+            }
+            .success-icon {
+                width: 50px;
+                height: 50px;
+            }
+            .text-title {
+                font-size: 12px;
+                width: auto;
+            }
+            .line-value {
+                font-size: 12px;
+                text-align: right;
+                width: 150px;
+            }
+            .title-comp {
+            margin-top: 20px;
+            padding-top: 14px;
+            border-top: 1px solid #ffffff;
+            text-align: left;
+            font-size: 12px;
+            font-weight: 700;
+            }
+            .logo-desktop {
+                display: none;
+            }
+            .logo-mobile {
+                display: block;
+                margin-left: 3px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="email-container">
+    <div class="email-header">
+        <div class="logo-wrapper" >
+            <img src="cid:logo1" width="60">
+            <img src="cid:logo2" width="60">
+            <img src="cid:logo4" width="200" class="logo-desktop">
+            <img src="cid:logo5" width="60" class="logo-mobile">
+        </div>
+        <img src="cid:logo3" width="80">
+    </div>
+    <div class="email-body">
+        <h2>National Revenue Payment</h2>
+        <h3 class="title-comp" ><b>Payment Information</b></h3>
+        <div class="payment-details">
+            <table class="table-info">
+                <tr>
+                    <td class="text-title" ><b>Payment Time</b></td>
+                    <td class="line-value" >[[${paymentTime}]]</td>
+                </tr>
+                <tr>
+                    <td class="text-title"><b>NTL</b></td>
+                    <td class="line-value">[[${NTL}]]</td>
+                </tr>
+                <tr>
+                    <td class="text-title"><b>Date Of Record</b></td>
+                    <td class="line-value">[[${dateRecord}]]</td>
+                </tr>
+                <tr>
+                    <td class="text-title"><b>NTPN</b></td>
+                    <td class="line-value">[[${NTPN}]]</td>
+                </tr>
+                <tr>
+                    <td class="text-title"><b>Branch Code</b></td>
+                    <td class="line-value">[[${branchCode}]]</td>
+                </tr>
+                <tr>
+                    <td class="text-title"><b>STAN</b></td>
+                    <td class="line-value">[[${STAN}]]</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3 class="title-comp" >This is an auto generate email, please do not reply.</h3>
+    </div>
+    <div class="footer">
+        &copy; 2025 Payment System. All Rights Reserved.
+    </div>
+</div>
+</body>
+</html>
